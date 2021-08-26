@@ -6,7 +6,7 @@ const app = express()
 
 app.use(cors())
 
-app.use(express.static(path.join(__dirname,'../../index.html')))
-
+app.use(express.static(path.join(__dirname,'../../src')))
+console.log(path.join(__dirname,'../../src'));
 app.use(express.urlencoded({ extended: false }))
 module.exports = app
