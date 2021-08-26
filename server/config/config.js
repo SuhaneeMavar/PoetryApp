@@ -1,4 +1,4 @@
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 const mongoUri = 'mongodb+srv://root:root@meanstack.it68f.mongodb.net/poetry?retryWrites=true&w=majority'
 
