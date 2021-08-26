@@ -9,7 +9,7 @@
 
             <form #form='ngForm' (ngSubmit)='onSubmit(form)' class="register-form">
               <label>Email</label>
-              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+              <div class="input-group form-group-no-border" >
                 <div class="input-group-prepend">
                   <span class="input-group-text">
                     <i class="nc-icon nc-email-85"></i>
@@ -24,7 +24,7 @@
               <small style="color: black;" *ngIf='email.errors?.email && email.touched'>Email is invalid</small><br>
 
               <label>Password</label>
-              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+              <div class="input-group form-group-no-border">
                 <div class="input-group-prepend">
                   <span class="input-group-text">
                     <i class="nc-icon nc-key-25"></i>
