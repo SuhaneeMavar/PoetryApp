@@ -1,0 +1,8 @@
+{
+  "name": "Poetries",
+  "description": "An app to share your poems",
+  "repository": "https://github.com/SuhaneeMavar/PoetryApp.git",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

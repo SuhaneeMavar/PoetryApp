@@ -21,7 +21,6 @@ app.use('/users',users)
 app.use('/poems',poems)
 app.use('/auth',auth)
 
-
 // app.get('/',(req,res)=>{
 //         res.render(path.join(__dirname,'../public/index.html'))
 // })
