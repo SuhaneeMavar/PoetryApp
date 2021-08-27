@@ -8,10 +8,8 @@
 
 <div class="container-fluid pt-3 pb-5 pb-md-4 " style="background-color: rgba(233, 218, 247, 0.493);">
     <h4 class="text-center text-dark font-weigth-normal">Auther</h4>
-    <hr>
-    <div class=" owner-bio my-5">
+    <div style="cursor: pointer;" routerLink='/user/{{poem.user._id}}' class=" owner-bio my-5">
         <h5 class="text-center "><b>{{poem.user.userName}}</b></h5>
         <p class="text-center">{{poem.user.bio}}</p>
     </div>
-
 </div>

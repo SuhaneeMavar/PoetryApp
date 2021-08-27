@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Poem } from 'app/models/poem';
+import { User } from 'app/models/user';
 import { PoemService } from 'app/services/poem.service';
 
 @Component({
@@ -12,7 +13,9 @@ export class PoemComponent implements OnInit {
 
   poem: Poem = new Poem()
 
-  constructor(private poemService: PoemService, private route: ActivatedRoute) { }
+  constructor(private poemService: PoemService, private route: ActivatedRoute) { 
+    this.poem.user=new User()
+  }
 
   ngOnInit(): void {
     this.getPoem()
