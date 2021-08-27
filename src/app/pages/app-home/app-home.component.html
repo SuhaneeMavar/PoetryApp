@@ -15,7 +15,7 @@
                         <li *ngFor='let p of poems'>
                             <div class="row">
                                 <div class="col-7 ml-auto">
-                                    <h6 class="text-dark">{{p.title}}<br /><small class="text-dark">By
+                                    <h6 class="text-dark">{{p.title}}<br /><small routerLink='/user/{{p.user._id}}' class="text-dark">By
                                             {{p.user.userName}}</small>
                                     </h6>
                                 </div>
