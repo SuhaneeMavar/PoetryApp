@@ -26,7 +26,7 @@ export class AuthService {
     this.http.post(`${BASE_URL}auth/login`, JSON.stringify(user), header).pipe(retry(3)).subscribe(data => {
       let token: any = data
       this.coockieService.set('token', btoa(token.token), 1, null, null, false)
-      console.log(atob(this.coockieService.get('token')));
+      // console.log(atob(this.coockieService.get('token')));
       this.router.navigate(['/app'])
       this.isUserLogined.next(true)
     })
