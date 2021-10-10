@@ -21,9 +21,9 @@ app.use('/users',users)
 app.use('/poems',poems)
 app.use('/auth',auth)
 
-// app.get('/',(req,res)=>{
-//         res.render(path.join(__dirname,'../public/index.html'))
-// })
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname,'../dist/poetry/index.html'))
+})
 
 app.listen(config.port,()=>{
     console.log('Server is running at port:'+config.port);
