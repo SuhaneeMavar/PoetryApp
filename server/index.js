@@ -21,7 +21,7 @@ app.use('/users',users)
 app.use('/poems',poems)
 app.use('/auth',auth)
 
-app.get('/*/*', function (req, res) {
+app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname,'../dist/poetry/index.html'))
 })
 
