@@ -21,5 +21,6 @@ Angular, Node, Express, MongoDB
 - Explored MEAN Stack and MongoDB concepts.
 
 <img src="https://github.com/SuhaneeMavar/PoetryApp/blob/main/src/assets/img/Screenshot%20(271).png">
-<img src="https://github.com/SuhaneeMavar/PoetryApp/blob/main/src/assets/img/Screenshot%20(272).png">
-<img src="https://github.com/SuhaneeMavar/PoetryApp/blob/main/src/assets/img/Screenshot%20(273).png">
+<img src="https://github.com/SuhaneeMavar/PoetryApp/blob/main/src/assets/img/Screenshot%20(276).png">
+<img src="https://github.com/SuhaneeMavar/PoetryApp/blob/main/src/assets/img/Screenshot%20(274).png">
+<img src="https://github.com/SuhaneeMavar/PoetryApp/blob/main/src/assets/img/Screenshot%20(280).png">
