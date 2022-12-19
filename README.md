@@ -3,9 +3,6 @@
 # Poetry App
  
 A web app that provides a simple platform for writing and posting poems. Implemented authentication using JWT
-## Demo
-
-https://poetries.herokuapp.com
 
 
 ## Technologies used
