@@ -1,0 +1,58 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true"
+        style="background-image: url('./assets/img/examples/signup.gif');">
+        <div class="font-weight-bold " style="opacity: 1;color: white;">
+            <h3 class="text-dark"><b><b>{{user.userName}}</b></b></h3>
+        </div>
+    </div>
+    <div class="section profile-content">
+        <div class="container">
+            <div class="owner pt-5">
+                <div class="name">
+                    <h4 class="title font-weight-bold ">Introduction<br /></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto text-center">
+                    <p>{{user.bio}} </p>
+                    <br />
+
+                </div>
+            </div>
+            <div class="col-12">
+                <button routerLink='/poem' routerLink='/poems/post'
+                    class="btn btn-outline-purple btn-round ml-auto mr-auto d-block">Write your poem</button>
+            </div>
+            <br />
+            <hr class="my-5">
+            <h4 class="info-title my-3 font-weight-normal h3 text-center mb-5" style="color: blueviolet">Poems</h4>
+            <div class="row following" id="follows">
+                <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+                    <ul class="list-unstyled follows">
+                        <li *ngFor='let p of poems'>
+                            <div class="row">
+                                <div class="col-md-5 ml-auto">
+                                    <h6 class="text-dark text-md-left text-center">{{p.title}}<br /><small class="text-dark">By
+                                            {{p.user.userName}}</small>
+                                    </h6>
+                                </div>
+                                <div class="col-md-7 mr-auto mt-2  ml-auto ">
+                                    <div class="text-center">
+                                        <button routerLink='/poem' routerLink='/poems/{{p._id}}'
+                                            class="btn btn-outline-danger btn-round mr-2">Read</button>
+                                        <button routerLink='/poem' routerLink='/poems/edit/{{p._id}}'
+                                            class="btn btn-outline-danger btn-round mr-2">Edit</button>
+                                        <button  (click)="delete(p._id)"
+                                            class="btn btn-outline-danger btn-round ">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

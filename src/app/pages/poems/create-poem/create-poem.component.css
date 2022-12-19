@@ -1,0 +1,22 @@
+.poem
+{
+    font-family: TimesNewRoman;
+    line-height: 2rem;
+}
+
+.owner-bio
+{
+    text-align: left;
+    position: relative;
+    top: 33%;
+}
+
+@media(max-width:750px)
+{
+    .owner-bio
+    {
+        text-align: left;
+        position: relative;
+        top: 0%;
+    }
+}

@@ -1,0 +1,34 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true"
+        style="background-image: url('./assets/img/examples/login.gif');">
+        <div class="font-weight-bold " style="opacity: 1;color: white;">
+            <h3>Read for enjoying, learning and to explore..</h3>
+        </div>
+    </div>
+    <div class="section profile-content">
+        <div class="container">
+            <br />
+            <h4 class="info-title my-3 font-weight-normal h3 text-center mb-5" style="color: blueviolet">Poems</h4>
+            <div class="row following" id="follows">
+                <div class="col-lg-8 col-md-6 ml-auto mr-auto">
+                    <ul class="list-unstyled follows">
+                        <li *ngFor='let p of poems'>
+                            <div class="row">
+                                <div class="col-7 ml-auto">
+                                    <h6 class="text-dark">{{p.title}}<br /><small style="cursor: pointer;" routerLink='/user/{{p.user._id}}' class="text-dark">
+                                    <b>By {{p.user.userName}}</b></small>
+                                    </h6>
+                                </div>
+                                <div class="col-3 mr-auto mt-2  ml-auto">
+                                    <button routerLink='/poem' routerLink='/poems/{{p._id}}'
+                                        class="btn btn-outline-danger btn-round ">Read</button>
+                                </div>
+                            </div>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
